@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Short survey</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Enter Your Name: <input id="name" type="text" required placeholder="John Smith"/></label>
+      <label for="email" id="email-label">Enter Your Email: <input id="email" type="email" placeholder="johnsmith@gmail.com"required/></label>
+      <label for="number" id="number-label">Enter Your Number: <input id="number" type="number" placeholder="000" min="0" max="99999"/></label>
+      <label>How does this app make you feel?
+      <select id="dropdown">
+        <option>select</option>
+        <option>Happy</option>
+        <option>Sad</option>
+        <option>Indifferent</option>
+      </select>
+      <label/>
+      <label>Would you recommend this app? <div>
+        <input type="radio" value="0"
+class="inline" name="recommended"/>Yes</label>
+      <label><input type="radio" value="1"
+class="inline"  name="recommended"/>No</label>
+</div>
+      <label><input type="checkbox" value="female"
+class="inline"/> Female</label>
+      <label><input type="checkbox" value="female"
+class="inline"/> Male</label>
+      <label>
+      <label>Write something here:
+        <textarea>
+        </textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
